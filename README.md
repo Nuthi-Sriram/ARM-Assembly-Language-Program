@@ -4,7 +4,7 @@ List of programs being done in the Embedded Systems Lab.
 
 # :book: How to use the repository?
 
-- [Master branch](https://github.com/Nuthi-Sriram/Assembly-Level-Code-for-8086/tree/master/SourceCode) contains codes that have been tested and are guaranteed to run. For any issues please report to us in the format mentioned below.
+- [Master branch](https://github.com/Nuthi-Sriram/ARM-Assembly-Language-Program/tree/master/SourceCode) contains codes that have been tested and are guaranteed to run. For any issues please report to us in the format mentioned below.
 
 # :octocat: How to contribute?
 
