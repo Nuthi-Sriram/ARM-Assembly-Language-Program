@@ -1,0 +1,23 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\ARM Projects\intro\intro.uvproj
+Project File Date:  05/07/2020
+
+<h2>Output:</h2>
+assembling intro.s...
+intro.s - 0 Error(s), 0 Warning(s).
+assembling intro.s...
+intro.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling intro.s...
+linking...
+Program Size: Code=4 RO-data=0 RW-data=0 ZI-data=0  
+"intro.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling intro.s...
+linking...
+Program Size: Code=4 RO-data=0 RW-data=0 ZI-data=0  
+"intro.axf" - 0 Error(s), 0 Warning(s).

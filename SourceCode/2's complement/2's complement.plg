@@ -1,0 +1,60 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\ARM Projects\2's complement\2's complement.uvproj
+Project File Date:  05/07/2020
+
+<h2>Output:</h2>
+Build target 'Target 1'
+Target has no object modules
+Target not created
+Build target 'Target 1'
+assembling 2's complement.s...
+2's complement.s(1): error: A1135E: Area name missing
+2's complement.s(2): error: A1105E: Area directive missing
+2's complement.s(2): warning: A1088W: Faking declaration of area AREA |$$$$$$$|
+Target not created
+Build target 'Target 1'
+assembling 2's complement.s...
+2's complement.s(1): error: A1135E: Area name missing
+2's complement.s(2): error: A1105E: Area directive missing
+2's complement.s(2): warning: A1088W: Faking declaration of area AREA |$$$$$$$|
+Target not created
+Build target 'Target 1'
+assembling 2's complement.s...
+linking...
+Program Size: Code=8 RO-data=0 RW-data=0 ZI-data=0  
+"2's complement.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling 2's complement.s...
+2's complement.s(1): error: A1135E: Area name missing
+2's complement.s(2): error: A1105E: Area directive missing
+2's complement.s(2): warning: A1088W: Faking declaration of area AREA |$$$$$$$|
+Target not created
+Build target 'Target 1'
+assembling twosComplement.s...
+linking...
+Program Size: Code=8 RO-data=0 RW-data=0 ZI-data=0  
+"2's complement.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling twosComplement.s...
+linking...
+Program Size: Code=8 RO-data=0 RW-data=0 ZI-data=0  
+"2's complement.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling twosComplement.s...
+linking...
+Program Size: Code=8 RO-data=0 RW-data=0 ZI-data=0  
+"2's complement.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling twosComplement.s...
+linking...
+Program Size: Code=8 RO-data=0 RW-data=0 ZI-data=0  
+"2's complement.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling twosComplement.s...
+linking...
+Program Size: Code=8 RO-data=0 RW-data=0 ZI-data=0  
+"2's complement.axf" - 0 Error(s), 0 Warning(s).

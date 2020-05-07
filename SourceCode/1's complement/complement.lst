@@ -1,0 +1,28 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             complement, code, readonly
+    2 00000000 E3E01008        mvn              r1, #8
+    3 00000004                 end
+Command Line: --debug --xref --device=DARMP --apcs=interwork -ocomplement.o -IC
+:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=complement.lst comple
+ment.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+complement 00000000
+
+Symbol: complement
+   Definitions
+      At line 1 in file complement.s
+   Uses
+      None
+Comment: complement unused
+1 symbol
+321 symbols in table

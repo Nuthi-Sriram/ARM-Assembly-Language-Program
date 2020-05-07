@@ -1,0 +1,2 @@
+Dependencies for Project '1's complement', Target 'Target 1': (DO NOT MODIFY !)
+F (.\complement.s)(0x5EB3F0F1)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "complement.lst" --xref -o "complement.o")

@@ -1,0 +1,29 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             twoscomplement, code, readonly
+    2 00000000 E3E00008        mvn              r0,#8
+    3 00000004 E2801001        add              r1,r0,#1
+    4 00000008                 end
+Command Line: --debug --xref --device=DARMP --apcs=interwork -otwosComplement.o
+ -IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=twosComplement.ls
+t twosComplement.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+twoscomplement 00000000
+
+Symbol: twoscomplement
+   Definitions
+      At line 1 in file twosComplement.s
+   Uses
+      None
+Comment: twoscomplement unused
+1 symbol
+321 symbols in table
