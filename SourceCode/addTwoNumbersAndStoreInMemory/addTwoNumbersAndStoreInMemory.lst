@@ -1,0 +1,127 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             dat, DATA, readonly
+    2 00000000 00000003 
+                       value1  dcd              0x3
+    3 00000004                 AREA             dat1, DATA, readonly
+    4 00000000 00000002 
+                       value2  dcd              0x2
+    5 00000004                 AREA             dat2, DATA, readwrite
+    6 00000000 00000000 
+                       result  dcd              0x00
+    7 00000004         
+    8 00000004                 AREA             prog, code, readonly
+    9 00000000 E59F0018        ldr              r0, =value1
+   10 00000004 E59F1018        ldr              r1, =value2
+   11 00000008 E59F3018        ldr              r3, =result
+   12 0000000C E5900000        ldr              r0, [r0]
+   13 00000010 E5911000        ldr              r1, [r1]
+   14 00000014 E0802001        add              r2,r0,r1
+   15 00000018 E5832000        str              r2,[r3]
+   16 0000001C         
+   17 0000001C EAFFFFFE 
+                       e       b                e
+   18 00000020                 end
+              00000000 
+              00000000 
+              00000000 
+Command Line: --debug --xref --device=DARMP --apcs=interwork -oaddTwoNumbersAnd
+StoreInMemory.o -IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=ad
+dTwoNumbersAndStoreInMemory.lst addTwoNumbersAndStoreInMemory.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+dat 00000000
+
+Symbol: dat
+   Definitions
+      At line 1 in file addTwoNumbersAndStoreInMemory.s
+   Uses
+      None
+Comment: dat unused
+value1 00000000
+
+Symbol: value1
+   Definitions
+      At line 2 in file addTwoNumbersAndStoreInMemory.s
+   Uses
+      At line 9 in file addTwoNumbersAndStoreInMemory.s
+Comment: value1 used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+dat1 00000000
+
+Symbol: dat1
+   Definitions
+      At line 3 in file addTwoNumbersAndStoreInMemory.s
+   Uses
+      None
+Comment: dat1 unused
+value2 00000000
+
+Symbol: value2
+   Definitions
+      At line 4 in file addTwoNumbersAndStoreInMemory.s
+   Uses
+      At line 10 in file addTwoNumbersAndStoreInMemory.s
+Comment: value2 used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+dat2 00000000
+
+Symbol: dat2
+   Definitions
+      At line 5 in file addTwoNumbersAndStoreInMemory.s
+   Uses
+      None
+Comment: dat2 unused
+result 00000000
+
+Symbol: result
+   Definitions
+      At line 6 in file addTwoNumbersAndStoreInMemory.s
+   Uses
+      At line 11 in file addTwoNumbersAndStoreInMemory.s
+Comment: result used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+e 0000001C
+
+Symbol: e
+   Definitions
+      At line 17 in file addTwoNumbersAndStoreInMemory.s
+   Uses
+      At line 17 in file addTwoNumbersAndStoreInMemory.s
+Comment: e used once
+prog 00000000
+
+Symbol: prog
+   Definitions
+      At line 8 in file addTwoNumbersAndStoreInMemory.s
+   Uses
+      None
+Comment: prog unused
+2 symbols
+330 symbols in table

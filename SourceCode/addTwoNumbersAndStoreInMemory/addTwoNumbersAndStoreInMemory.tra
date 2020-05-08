@@ -1,0 +1,18 @@
+*** Creating Trace Output File 'addTwoNumbersAndStoreInMemory.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"addtwonumbersandstoreinmemory.o"'
+### ADS-LD Command completed:
+--device DARMP "addtwonumbersandstoreinmemory.o" --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x40000000 --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\addTwoNumbersAndStoreInMemory.map" -o "addTwoNumbersAndStoreInMemory.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'addTwoNumbersAndStoreInMemory.axf'
+### ADS-LD Command File: 'addTwoNumbersAndStoreInMemory.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'addTwoNumbersAndStoreInMemory.lnp', Handle=0x0000080C
+### Writing '.lnp' file
+### ADS-LD Command file 'addTwoNumbersAndStoreInMemory.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
