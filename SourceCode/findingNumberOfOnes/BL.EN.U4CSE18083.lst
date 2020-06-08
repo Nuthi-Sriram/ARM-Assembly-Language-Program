@@ -1,0 +1,84 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             dat, DATA, READONLY
+    2 00000000 0000000C 
+                       input   dcd              0xC
+    3 00000004         
+    4 00000004                 AREA             pgm, CODE, READONLY
+    5 00000000 E59F001C        ldr              r0, =input
+    6 00000004 E3A05000        mov              r5, #0
+    7 00000008 E3A06000        mov              r6, #0
+    8 0000000C E5901000        ldr              r1, [r0]
+    9 00000010 E1B010A1 
+                       loop    movs             r1,r1, LSR #1
+   10 00000014 22855001        ADDCS            r5,#1
+   11 00000018 E3510000        cmp              r1,#0
+   12 0000001C 1AFFFFFB        bne              loop
+   13 00000020         
+   14 00000020 EAFFFFFE 
+                       e       b                e
+   15 00000024         
+   16 00000024                 end
+              00000000 
+Command Line: --debug --xref --device=DARMP --apcs=interwork -oBL.EN.U4CSE18083
+.o -IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=BL.EN.U4CSE1808
+3.lst BL.EN.U4CSE18083.S
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+dat 00000000
+
+Symbol: dat
+   Definitions
+      At line 1 in file BL.EN.U4CSE18083.S
+   Uses
+      None
+Comment: dat unused
+input 00000000
+
+Symbol: input
+   Definitions
+      At line 2 in file BL.EN.U4CSE18083.S
+   Uses
+      At line 5 in file BL.EN.U4CSE18083.S
+Comment: input used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+e 00000020
+
+Symbol: e
+   Definitions
+      At line 14 in file BL.EN.U4CSE18083.S
+   Uses
+      At line 14 in file BL.EN.U4CSE18083.S
+Comment: e used once
+loop 00000010
+
+Symbol: loop
+   Definitions
+      At line 9 in file BL.EN.U4CSE18083.S
+   Uses
+      At line 12 in file BL.EN.U4CSE18083.S
+Comment: loop used once
+pgm 00000000
+
+Symbol: pgm
+   Definitions
+      At line 4 in file BL.EN.U4CSE18083.S
+   Uses
+      None
+Comment: pgm unused
+3 symbols
+327 symbols in table
