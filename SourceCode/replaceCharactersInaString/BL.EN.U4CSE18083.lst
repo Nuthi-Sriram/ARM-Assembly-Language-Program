@@ -1,0 +1,141 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             dat, DATA, READONLY
+    2 00000000 6D 61 6C 
+              61 79 61 
+              6C 61 6D 
+              00       string  dcb              "malayalam\0"
+    3 0000000A                 AREA             res, DATA, READWRITE
+    4 00000000         destination
+                               dcb              ""
+    5 00000000         
+    6 00000000                 AREA             pgm, CODE, READONLY
+    7 00000000 E59F0034        ldr              r0, =string
+    8 00000004 E59F1034        ldr              r1, =destination
+    9 00000008         
+   10 00000008 E4D02001 
+                       loop    ldrb             r2,[r0], #1
+   11 0000000C E3520061        cmp              r2,#"a"
+   12 00000010 0A000004        beq              replace
+   13 00000014 E1A05002        mov              r5,r2
+   14 00000018 E4C15001        strb             r5, [r1], #1
+   15 0000001C E3520000        cmp              r2, #"\0"
+   16 00000020 1AFFFFF8        bne              loop
+   17 00000024         
+   18 00000024 EAFFFFFE 
+                       exit    b                exit
+   19 00000028         
+   20 00000028 E3A05039 
+                       replace mov              r5,#"9"
+   21 0000002C E4C15001        strb             r5, [r1], #1
+   22 00000030 E3520000        cmp              r2, #"\0"
+   23 00000034 1AFFFFF3        bne              loop
+   24 00000038         
+   25 00000038 EAFFFFFE 
+                       e       b                e
+   26 0000003C         
+   27 0000003C                 end
+              00000000 
+              00000000 
+Command Line: --debug --xref --device=DARMP --apcs=interwork -oBL.EN.U4CSE18083
+.o -IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=BL.EN.U4CSE1808
+3.lst BL.EN.U4CSE18083.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+dat 00000000
+
+Symbol: dat
+   Definitions
+      At line 1 in file BL.EN.U4CSE18083.s
+   Uses
+      None
+Comment: dat unused
+string 00000000
+
+Symbol: string
+   Definitions
+      At line 2 in file BL.EN.U4CSE18083.s
+   Uses
+      At line 7 in file BL.EN.U4CSE18083.s
+Comment: string used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+destination 00000000
+
+Symbol: destination
+   Definitions
+      At line 4 in file BL.EN.U4CSE18083.s
+   Uses
+      At line 8 in file BL.EN.U4CSE18083.s
+Comment: destination used once
+res 00000000
+
+Symbol: res
+   Definitions
+      At line 3 in file BL.EN.U4CSE18083.s
+   Uses
+      None
+Comment: res unused
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+e 00000038
+
+Symbol: e
+   Definitions
+      At line 25 in file BL.EN.U4CSE18083.s
+   Uses
+      At line 25 in file BL.EN.U4CSE18083.s
+Comment: e used once
+exit 00000024
+
+Symbol: exit
+   Definitions
+      At line 18 in file BL.EN.U4CSE18083.s
+   Uses
+      At line 18 in file BL.EN.U4CSE18083.s
+Comment: exit used once
+loop 00000008
+
+Symbol: loop
+   Definitions
+      At line 10 in file BL.EN.U4CSE18083.s
+   Uses
+      At line 16 in file BL.EN.U4CSE18083.s
+      At line 23 in file BL.EN.U4CSE18083.s
+
+pgm 00000000
+
+Symbol: pgm
+   Definitions
+      At line 6 in file BL.EN.U4CSE18083.s
+   Uses
+      None
+Comment: pgm unused
+replace 00000028
+
+Symbol: replace
+   Definitions
+      At line 20 in file BL.EN.U4CSE18083.s
+   Uses
+      At line 12 in file BL.EN.U4CSE18083.s
+Comment: replace used once
+5 symbols
+331 symbols in table
