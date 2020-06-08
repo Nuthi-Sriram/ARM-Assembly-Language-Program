@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\ARM Projects\findingBiggestInAnArray\findingBiggestInAnArray.uvproj
+Project File Date:  06/08/2020
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling BL.EN.U4CSE18083.s...
+BL.EN.U4CSE18083.s(2): error: A1163E: Unknown opcode dbd , expecting opcode or Macro
+BL.EN.U4CSE18083.s(4): error: A1163E: Unknown opcode dbd , expecting opcode or Macro
+BL.EN.U4CSE18083.s(6): error: A1163E: Unknown opcode r0, , expecting opcode or Macro
+BL.EN.U4CSE18083.s(7): error: A1163E: Unknown opcode r1, , expecting opcode or Macro
+BL.EN.U4CSE18083.s(9): error: A1163E: Unknown opcode r3, , expecting opcode or Macro
+BL.EN.U4CSE18083.s(10): error: A1163E: Unknown opcode r2,r3 , expecting opcode or Macro
+BL.EN.U4CSE18083.s(11): error: A1163E: Unknown opcode loopassign , expecting opcode or Macro
+BL.EN.U4CSE18083.s(12): error: A1163E: Unknown opcode loop , expecting opcode or Macro
+BL.EN.U4CSE18083.s(14): error: A1114E: Expected register relative expression
+BL.EN.U4CSE18083.s(15): error: A1163E: Unknown opcode r2, , expecting opcode or Macro
+BL.EN.U4CSE18083.s(16): error: A1163E: Unknown opcode loop , expecting opcode or Macro
+Target not created
+Build target 'Target 1'
+assembling BL.EN.U4CSE18083.s...
+BL.EN.U4CSE18083.s(2): error: A1163E: Unknown opcode dbd , expecting opcode or Macro
+BL.EN.U4CSE18083.s(4): error: A1163E: Unknown opcode dbd , expecting opcode or Macro
+BL.EN.U4CSE18083.s(8): error: A1163E: Unknown opcode loop , expecting opcode or Macro
+BL.EN.U4CSE18083.s(14): error: A1163E: Unknown opcode loopassign , expecting opcode or Macro
+BL.EN.U4CSE18083.s(18): error: A1163E: Unknown opcode e , expecting opcode or Macro
+Target not created
+Build target 'Target 1'
+assembling BL.EN.U4CSE18083.s...
+BL.EN.U4CSE18083.s(8): error: A1163E: Unknown opcode loop , expecting opcode or Macro
+BL.EN.U4CSE18083.s(14): error: A1163E: Unknown opcode loopassign , expecting opcode or Macro
+BL.EN.U4CSE18083.s(18): error: A1163E: Unknown opcode e , expecting opcode or Macro
+Target not created
+Build target 'Target 1'
+assembling BL.EN.U4CSE18083.s...
+BL.EN.U4CSE18083.s(14): error: A1163E: Unknown opcode loopassign , expecting opcode or Macro
+BL.EN.U4CSE18083.s(18): error: A1163E: Unknown opcode e , expecting opcode or Macro
+Target not created
+Build target 'Target 1'
+assembling BL.EN.U4CSE18083.s...
+BL.EN.U4CSE18083.s(14): error: A1114E: Expected register relative expression
+BL.EN.U4CSE18083.s(18): error: A1163E: Unknown opcode e , expecting opcode or Macro
+Target not created
+Build target 'Target 1'
+assembling BL.EN.U4CSE18083.s...
+BL.EN.U4CSE18083.s(14): error: A1114E: Expected register relative expression
+Target not created
+Build target 'Target 1'
+assembling BL.EN.U4CSE18083.s...
+BL.EN.U4CSE18083.s(14): error: A1114E: Expected register relative expression
+Target not created
+Build target 'Target 1'
+assembling BL.EN.U4CSE18083.s...
+linking...
+Program Size: Code=48 RO-data=16 RW-data=4 ZI-data=0  
+"findingBiggestInAnArray.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling BL.EN.U4CSE18083.s...
+linking...
+Program Size: Code=56 RO-data=16 RW-data=4 ZI-data=0  
+"findingBiggestInAnArray.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling BL.EN.U4CSE18083.s...
+BL.EN.U4CSE18083.s(18): error: A1163E: Unknown opcode be , expecting opcode or Macro
+BL.EN.U4CSE18083.s(26): error: A1163E: Unknown opcode be , expecting opcode or Macro
+Target not created
+Build target 'Target 1'
+assembling BL.EN.U4CSE18083.s...
+BL.EN.U4CSE18083.s(18): error: A1163E: Unknown opcode be , expecting opcode or Macro
+BL.EN.U4CSE18083.s(26): error: A1163E: Unknown opcode be , expecting opcode or Macro
+Target not created
+Build target 'Target 1'
+assembling BL.EN.U4CSE18083.s...
+linking...
+Program Size: Code=84 RO-data=20 RW-data=4 ZI-data=0  
+"findingBiggestInAnArray.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling BL.EN.U4CSE18083.s...
+BL.EN.U4CSE18083.s(28): error: A1108E: Multiply defined symbol 'e'
+Target not created
+Build target 'Target 1'
+assembling BL.EN.U4CSE18083.s...
+linking...
+Program Size: Code=88 RO-data=20 RW-data=4 ZI-data=0  
+"findingBiggestInAnArray.axf" - 0 Error(s), 0 Warning(s).

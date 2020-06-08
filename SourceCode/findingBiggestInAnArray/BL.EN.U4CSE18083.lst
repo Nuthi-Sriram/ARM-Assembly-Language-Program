@@ -1,0 +1,152 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             dat, DATA, READONLY
+    2 00000000 00000001 
+              00000005 
+              0000000A 
+              00000004 array   dcd              0x1, 0x5, 0xA, 0x4
+    3 00000010 00000004 
+                       len     dcd              4
+    4 00000014                 AREA             res, DATA, READWRITE
+    5 00000000 00000000 
+                       biggest dcd              0x00
+    6 00000004                 AREA             pgm, CODE, READONLY
+    7 00000000 E59F0044        ldr              r0, =array
+    8 00000004 E59F1044        ldr              r1, =biggest
+    9 00000008 E59F5044        ldr              r5, =len
+   10 0000000C E5956000        ldr              r6,[r5]
+   11 00000010 E5902000 
+                       loop    ldr              r2, [r0]
+   12 00000014 E5913000        ldr              r3, [r1]
+   13 00000018 E1520003        cmp              r2,r3       ;1 0
+   14 0000001C CA000004        bgt              loopassign
+   15 00000020 E2800004        add              r0,r0,#4
+   16 00000024 E2466001        sub              r6,r6,#1
+   17 00000028 E3560000        cmp              r6,#0
+   18 0000002C 1AFFFFF7        bne              loop
+   19 00000030 EAFFFFFE 
+                       et      b                et
+   20 00000034         loopassign
+   21 00000034 E5812000        str              r2, [r1]
+   22 00000038 E2800004        add              r0,r0,#4
+   23 0000003C E2466001        sub              r6,r6,#1
+   24 00000040 E3560000        cmp              r6,#0
+   25 00000044 1AFFFFF1        bne              loop
+   26 00000048         
+   27 00000048         
+   28 00000048 EAFFFFFE 
+                       e       b                e
+   29 0000004C                 end
+              00000000 
+              00000000 
+              00000000 
+Command Line: --debug --xref --device=DARMP --apcs=interwork -oBL.EN.U4CSE18083
+.o -IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=BL.EN.U4CSE1808
+3.lst BL.EN.U4CSE18083.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+array 00000000
+
+Symbol: array
+   Definitions
+      At line 2 in file BL.EN.U4CSE18083.s
+   Uses
+      At line 7 in file BL.EN.U4CSE18083.s
+Comment: array used once
+dat 00000000
+
+Symbol: dat
+   Definitions
+      At line 1 in file BL.EN.U4CSE18083.s
+   Uses
+      None
+Comment: dat unused
+len 00000010
+
+Symbol: len
+   Definitions
+      At line 3 in file BL.EN.U4CSE18083.s
+   Uses
+      At line 9 in file BL.EN.U4CSE18083.s
+Comment: len used once
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+biggest 00000000
+
+Symbol: biggest
+   Definitions
+      At line 5 in file BL.EN.U4CSE18083.s
+   Uses
+      At line 8 in file BL.EN.U4CSE18083.s
+Comment: biggest used once
+res 00000000
+
+Symbol: res
+   Definitions
+      At line 4 in file BL.EN.U4CSE18083.s
+   Uses
+      None
+Comment: res unused
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+e 00000048
+
+Symbol: e
+   Definitions
+      At line 28 in file BL.EN.U4CSE18083.s
+   Uses
+      At line 28 in file BL.EN.U4CSE18083.s
+Comment: e used once
+et 00000030
+
+Symbol: et
+   Definitions
+      At line 19 in file BL.EN.U4CSE18083.s
+   Uses
+      At line 19 in file BL.EN.U4CSE18083.s
+Comment: et used once
+loop 00000010
+
+Symbol: loop
+   Definitions
+      At line 11 in file BL.EN.U4CSE18083.s
+   Uses
+      At line 18 in file BL.EN.U4CSE18083.s
+      At line 25 in file BL.EN.U4CSE18083.s
+
+loopassign 00000034
+
+Symbol: loopassign
+   Definitions
+      At line 20 in file BL.EN.U4CSE18083.s
+   Uses
+      At line 14 in file BL.EN.U4CSE18083.s
+Comment: loopassign used once
+pgm 00000000
+
+Symbol: pgm
+   Definitions
+      At line 6 in file BL.EN.U4CSE18083.s
+   Uses
+      None
+Comment: pgm unused
+5 symbols
+332 symbols in table

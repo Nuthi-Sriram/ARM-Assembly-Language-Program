@@ -1,3 +1,7 @@
+;Write an ARM assembly language program to add N bytes numbers. Assume number of bytes stored in
+;memory location “n", source operands are stored in “src1” and “src2” memory locations. Store the result in
+;“result” memory location
+
 	AREA dat, DATA, READONLY
 n dcd 0x23, 0xDA, 0x44, 0x5A
 len dcd 4 
