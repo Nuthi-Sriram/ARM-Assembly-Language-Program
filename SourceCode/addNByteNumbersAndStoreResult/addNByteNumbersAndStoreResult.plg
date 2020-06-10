@@ -8,111 +8,24 @@ Project File Date:  06/08/2020
 
 <h2>Output:</h2>
 Build target 'Target 1'
-assembling BL.EN.U4CSE18083.s...
-BL.EN.U4CSE18083.s(9): error: A1163E: Unknown opcode r0, , expecting opcode or Macro
-BL.EN.U4CSE18083.s(10): error: A1163E: Unknown opcode r1, , expecting opcode or Macro
-BL.EN.U4CSE18083.s(11): error: A1163E: Unknown opcode r2, , expecting opcode or Macro
-BL.EN.U4CSE18083.s(12): error: A1163E: Unknown opcode r3, , expecting opcode or Macro
-BL.EN.U4CSE18083.s(13): error: A1163E: Unknown opcode r4, , expecting opcode or Macro
-BL.EN.U4CSE18083.s(15): error: A1163E: Unknown opcode r0,r0,#1 , expecting opcode or Macro
-BL.EN.U4CSE18083.s(16): error: A1163E: Unknown opcode r4, , expecting opcode or Macro
-BL.EN.U4CSE18083.s(17): error: A1163E: Unknown opcode r6,r3,r4 , expecting opcode or Macro
-BL.EN.U4CSE18083.s(18): error: A1163E: Unknown opcode r2, , expecting opcode or Macro
-BL.EN.U4CSE18083.s(19): error: A1163E: Unknown opcode r1,r1,#2 , expecting opcode or Macro
-BL.EN.U4CSE18083.s(20): error: A1163E: Unknown opcode r1, , expecting opcode or Macro
-BL.EN.U4CSE18083.s(21): error: A1163E: Unknown opcode loop , expecting opcode or Macro
-Target not created
+linking...
+Program Size: Code=72 RO-data=12 RW-data=4 ZI-data=0  
+"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
 Build target 'Target 1'
 assembling BL.EN.U4CSE18083.s...
-BL.EN.U4CSE18083.s(14): error: A1163E: Unknown opcode loop , expecting opcode or Macro
-BL.EN.U4CSE18083.s(22): error: A1163E: Unknown opcode e , expecting opcode or Macro
-Target not created
+linking...
+Program Size: Code=72 RO-data=12 RW-data=4 ZI-data=0  
+"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=72 RO-data=12 RW-data=4 ZI-data=0  
+"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
 Build target 'Target 1'
 assembling BL.EN.U4CSE18083.s...
-BL.EN.U4CSE18083.s(14): error: A1163E: Unknown opcode loop , expecting opcode or Macro
-Target not created
-Build target 'Target 1'
-assembling BL.EN.U4CSE18083.s...
-BL.EN.U4CSE18083.s(14): error: A1163E: Unknown opcode loop , expecting opcode or Macro
+BL.EN.U4CSE18083.s(13): error: A1150E: Bad symbol, not defined or external
 Target not created
 Build target 'Target 1'
 assembling BL.EN.U4CSE18083.s...
 linking...
-Program Size: Code=76 RO-data=20 RW-data=12 ZI-data=0  
-"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-Program Size: Code=76 RO-data=20 RW-data=12 ZI-data=0  
-"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-assembling BL.EN.U4CSE18083.s...
-linking...
-Program Size: Code=76 RO-data=20 RW-data=12 ZI-data=0  
-"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-Program Size: Code=76 RO-data=20 RW-data=12 ZI-data=0  
-"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-assembling BL.EN.U4CSE18083.s...
-linking...
-Program Size: Code=68 RO-data=20 RW-data=12 ZI-data=0  
-"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-assembling BL.EN.U4CSE18083.s...
-linking...
-Program Size: Code=68 RO-data=20 RW-data=12 ZI-data=0  
-"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-assembling BL.EN.U4CSE18083.s...
-BL.EN.U4CSE18083.s(21): error: A1163E: Unknown opcode loop , expecting opcode or Macro
-Target not created
-Build target 'Target 1'
-assembling BL.EN.U4CSE18083.s...
-linking...
-Program Size: Code=76 RO-data=20 RW-data=12 ZI-data=0  
-"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-assembling BL.EN.U4CSE18083.s...
-BL.EN.U4CSE18083.s(18): error: A1190E: Unexpected '['
-BL.EN.U4CSE18083.s(18): error: A1190E: Unexpected '['
-Target not created
-Build target 'Target 1'
-assembling BL.EN.U4CSE18083.s...
-linking...
-Program Size: Code=80 RO-data=20 RW-data=12 ZI-data=0  
-"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-Program Size: Code=80 RO-data=20 RW-data=12 ZI-data=0  
-"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-assembling BL.EN.U4CSE18083.s...
-linking...
-Program Size: Code=80 RO-data=20 RW-data=12 ZI-data=0  
-"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-assembling BL.EN.U4CSE18083.s...
-linking...
-Program Size: Code=84 RO-data=20 RW-data=12 ZI-data=0  
-"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-assembling BL.EN.U4CSE18083.s...
-linking...
-Program Size: Code=76 RO-data=20 RW-data=12 ZI-data=0  
-"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-assembling BL.EN.U4CSE18083.s...
-linking...
-Program Size: Code=80 RO-data=20 RW-data=12 ZI-data=0  
-"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-assembling BL.EN.U4CSE18083.s...
-linking...
-Program Size: Code=88 RO-data=20 RW-data=12 ZI-data=0  
-"addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-assembling BL.EN.U4CSE18083.s...
-linking...
-Program Size: Code=88 RO-data=20 RW-data=12 ZI-data=0  
+Program Size: Code=76 RO-data=12 RW-data=4 ZI-data=0  
 "addNByteNumbersAndStoreResult.axf" - 0 Error(s), 0 Warning(s).
