@@ -1,0 +1,2 @@
+Dependencies for Project 'countingNumberOfCharactersinaString', Target 'Target 1': (DO NOT MODIFY !)
+F (.\countingNumberOfCharactersinaString.s)(0x5EE3BFB3)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "countingNumberOfCharactersinaString.lst" --xref -o "countingNumberOfCharactersinaString.o")

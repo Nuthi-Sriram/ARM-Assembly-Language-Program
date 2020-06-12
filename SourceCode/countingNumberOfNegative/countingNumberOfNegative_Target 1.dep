@@ -1,0 +1,2 @@
+Dependencies for Project 'countingNumberOfNegative', Target 'Target 1': (DO NOT MODIFY !)
+F (.\countingNumberOfNegative.s)(0x5EE3B9F2)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "countingNumberOfNegative.lst" --xref -o "countingNumberOfNegative.o")

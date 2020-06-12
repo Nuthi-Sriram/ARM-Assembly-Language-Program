@@ -1,0 +1,84 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;Program to count the number of characters in a string 
+    2 00000000                 AREA             dat, DATA, READONLY
+    3 00000000 41 6D 72 
+              69 74 61 
+              00       string  dcb              "Amrita\0"
+    4 00000007         
+    5 00000007                 AREA             pgm, CODE, READONLY
+    6 00000000 E59F0014        ldr              r0,=string
+    7 00000004 E3A02000        mov              r2,#0
+    8 00000008 E4D01001 
+                       loop    ldrb             r1,[r0], #1
+    9 0000000C E3510000        cmp              r1,#"\0"
+   10 00000010 12822001        addne            r2,r2,#1
+   11 00000014 1AFFFFFB        bne              loop
+   12 00000018         
+   13 00000018 EAFFFFFE 
+                       e       b                e
+   14 0000001C                 end
+              00000000 
+Command Line: --debug --xref --device=DARMP --apcs=interwork -ocountingNumberOf
+CharactersinaString.o -IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --l
+ist=countingNumberOfCharactersinaString.lst countingNumberOfCharactersinaString
+.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+dat 00000000
+
+Symbol: dat
+   Definitions
+      At line 2 in file countingNumberOfCharactersinaString.s
+   Uses
+      None
+Comment: dat unused
+string 00000000
+
+Symbol: string
+   Definitions
+      At line 3 in file countingNumberOfCharactersinaString.s
+   Uses
+      At line 6 in file countingNumberOfCharactersinaString.s
+Comment: string used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+e 00000018
+
+Symbol: e
+   Definitions
+      At line 13 in file countingNumberOfCharactersinaString.s
+   Uses
+      At line 13 in file countingNumberOfCharactersinaString.s
+Comment: e used once
+loop 00000008
+
+Symbol: loop
+   Definitions
+      At line 8 in file countingNumberOfCharactersinaString.s
+   Uses
+      At line 11 in file countingNumberOfCharactersinaString.s
+Comment: loop used once
+pgm 00000000
+
+Symbol: pgm
+   Definitions
+      At line 5 in file countingNumberOfCharactersinaString.s
+   Uses
+      None
+Comment: pgm unused
+3 symbols
+327 symbols in table

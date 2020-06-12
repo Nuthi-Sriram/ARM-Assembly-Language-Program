@@ -1,0 +1,2 @@
+Dependencies for Project 'firstOccurrenceOfABlankSpace', Target 'Target 1': (DO NOT MODIFY !)
+F (.\firstOccurrenceOfABlankSpace.s)(0x5EE3C220)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "firstOccurrenceOfABlankSpace.lst" --xref -o "firstOccurrenceOfABlankSpace.o")

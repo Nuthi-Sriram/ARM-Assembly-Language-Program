@@ -1,0 +1,103 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             dat, DATA, READONLY
+    2 00000000 41 6D 72 
+              69 74 00 string  dcb              "Amrit\0"
+    3 00000006                 AREA             pgm, CODE, READONLY
+    4 00000000 E59F0024        ldr              r0,=string
+    5 00000004 E3A02000        mov              r2,#0
+    6 00000008 E4D01001 
+                       loop    ldrb             r1,[r0], #1
+    7 0000000C E3510020        cmp              r1,#" "
+    8 00000010 0A000003        beq              store
+    9 00000014 E3510000        cmp              r1,#"\0"
+   10 00000018 12822001        addne            r2,r2,#1
+   11 0000001C 1AFFFFF9        bne              loop
+   12 00000020         
+   13 00000020 EAFFFFFE 
+                       ex      b                ex
+   14 00000024 E1A05002 
+                       store   mov              r5,r2
+   15 00000028         
+   16 00000028 EAFFFFFE 
+                       e       b                e
+   17 0000002C                 end
+              00000000 
+Command Line: --debug --xref --device=DARMP --apcs=interwork -ofirstOccurrenceO
+fABlankSpace.o -IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=fir
+stOccurrenceOfABlankSpace.lst firstOccurrenceOfABlankSpace.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+dat 00000000
+
+Symbol: dat
+   Definitions
+      At line 1 in file firstOccurrenceOfABlankSpace.s
+   Uses
+      None
+Comment: dat unused
+string 00000000
+
+Symbol: string
+   Definitions
+      At line 2 in file firstOccurrenceOfABlankSpace.s
+   Uses
+      At line 4 in file firstOccurrenceOfABlankSpace.s
+Comment: string used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+e 00000028
+
+Symbol: e
+   Definitions
+      At line 16 in file firstOccurrenceOfABlankSpace.s
+   Uses
+      At line 16 in file firstOccurrenceOfABlankSpace.s
+Comment: e used once
+ex 00000020
+
+Symbol: ex
+   Definitions
+      At line 13 in file firstOccurrenceOfABlankSpace.s
+   Uses
+      At line 13 in file firstOccurrenceOfABlankSpace.s
+Comment: ex used once
+loop 00000008
+
+Symbol: loop
+   Definitions
+      At line 6 in file firstOccurrenceOfABlankSpace.s
+   Uses
+      At line 11 in file firstOccurrenceOfABlankSpace.s
+Comment: loop used once
+pgm 00000000
+
+Symbol: pgm
+   Definitions
+      At line 3 in file firstOccurrenceOfABlankSpace.s
+   Uses
+      None
+Comment: pgm unused
+store 00000024
+
+Symbol: store
+   Definitions
+      At line 14 in file firstOccurrenceOfABlankSpace.s
+   Uses
+      At line 8 in file firstOccurrenceOfABlankSpace.s
+Comment: store used once
+5 symbols
+329 symbols in table

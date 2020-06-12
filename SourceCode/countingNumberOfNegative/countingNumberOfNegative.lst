@@ -1,0 +1,110 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             dat, DATA, READONLY
+    2 00000000 00000021 
+              FFFFFFBB 
+              00000067 
+              FFFFFFDD data    dcd              0x21,-0x45,0x67, -0x23
+    3 00000010 00000004 
+                       len     dcd              4
+    4 00000014                 AREA             dat, DATA, READWRITE
+    5 00000014 00000000 
+                       count   dcd              0
+    6 00000018                 AREA             pgm, CODE, READONLY
+    7 00000000 E59F0028        ldr              r0,=data
+    8 00000004 E59F1028        ldr              r1,=len
+    9 00000008 E5912000        ldr              r2,[r1]
+   10 0000000C E59F4024        ldr              r4,=count
+   11 00000010 E4903004 
+                       loop    ldr              r3,[r0],#4
+   12 00000014 E3130080        tst              r3,#0x80
+   13 00000018 12855001        addne            r5,r5,#1
+   14 0000001C E2422001        sub              r2,r2,#1
+   15 00000020 E3520000        cmp              r2,#0
+   16 00000024 1AFFFFF9        bne              loop
+   17 00000028 E5845000        str              r5,[r4]
+   18 0000002C EAFFFFFE 
+                       e       b                e
+   19 00000030         
+   20 00000030                 end
+              00000000 
+              00000000 
+              00000000 
+Command Line: --debug --xref --device=DARMP --apcs=interwork -ocountingNumberOf
+Negative.o -IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=countin
+gNumberOfNegative.lst countingNumberOfNegative.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+count 00000014
+
+Symbol: count
+   Definitions
+      At line 5 in file countingNumberOfNegative.s
+   Uses
+      At line 10 in file countingNumberOfNegative.s
+Comment: count used once
+dat 00000000
+
+Symbol: dat
+   Definitions
+      At line 1 in file countingNumberOfNegative.s
+   Uses
+      None
+Comment: dat unused
+data 00000000
+
+Symbol: data
+   Definitions
+      At line 2 in file countingNumberOfNegative.s
+   Uses
+      At line 7 in file countingNumberOfNegative.s
+Comment: data used once
+len 00000010
+
+Symbol: len
+   Definitions
+      At line 3 in file countingNumberOfNegative.s
+   Uses
+      At line 8 in file countingNumberOfNegative.s
+Comment: len used once
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+e 0000002C
+
+Symbol: e
+   Definitions
+      At line 18 in file countingNumberOfNegative.s
+   Uses
+      At line 18 in file countingNumberOfNegative.s
+Comment: e used once
+loop 00000010
+
+Symbol: loop
+   Definitions
+      At line 11 in file countingNumberOfNegative.s
+   Uses
+      At line 16 in file countingNumberOfNegative.s
+Comment: loop used once
+pgm 00000000
+
+Symbol: pgm
+   Definitions
+      At line 6 in file countingNumberOfNegative.s
+   Uses
+      None
+Comment: pgm unused
+3 symbols
+329 symbols in table
